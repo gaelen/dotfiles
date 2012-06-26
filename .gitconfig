@@ -1,6 +1,8 @@
 [alias]
-	l = log --pretty=oneline -n 20 --graph
-	s = status -sb
+	co = checkout
+	br = branch
+	l  = log --pretty=oneline -n 20 --graph
+	st = status -sb
 	d = diff --patch-with-stat
 	undopush = push -f origin HEAD^:master
 
@@ -27,7 +29,7 @@
 	untracked = cyan
 
 [github]
-        user = gaelenh
+	user = gaelenh
 
 [merge]
 	log = true

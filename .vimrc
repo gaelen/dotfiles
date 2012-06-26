@@ -22,12 +22,24 @@ if exists("&undodir")
 	set undodir=~/.vim/undo
 endif
 
+" Wrap for 120 characters
+set tw=119
+" Auto indent
+set ai
+" Smart indent
+set si
+" Smart tab
+set sta
+" Set command history
+set history=100
 " Enable line numbers
 set number
 " Enable syntax highlighting
 syntax on
 " Highlight current line
 set cursorline
+" Use spaces, not tabs
+set expandtab
 " Make tabs as wide as two spaces
 set tabstop=2
 " Show “invisible” characters
@@ -49,6 +61,8 @@ set noerrorbells
 set nostartofline
 " Show the cursor position
 set ruler
+set softtabstop=2
+set shiftwidth=2
 " Don’t show the intro message when starting vim
 set shortmess=atI
 " Show the current mode
