@@ -23,7 +23,7 @@ if exists("&undodir")
 endif
 
 " Wrap for 120 characters
-set twi=119
+set tw=119
 " Auto indent
 set ai
 " Smart indent
