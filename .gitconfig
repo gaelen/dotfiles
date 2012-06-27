@@ -38,3 +38,5 @@
 	name = Gaelen Hadlett
 	email = gaelenh@gmail.com
 
+[core]
+	excludesfile = /Users/gaelen/.gitignore
