@@ -36,14 +36,16 @@ set history=100
 set number
 " Enable syntax highlighting
 syntax on
+" Use color scheme
+colorscheme Tomorrow-Night-Eighties
 " Highlight current line
 set cursorline
 " Use spaces, not tabs
 set expandtab
-" Make tabs as wide as two spaces
-set tabstop=2
+" Make tabs as wide as four spaces
+set tabstop=4
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set lcs=tab:▸\ ,trail:·,eol:¬
 set list
 " Highlight searches
 set hlsearch
