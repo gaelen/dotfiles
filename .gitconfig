@@ -40,3 +40,5 @@
 
 [core]
 	excludesfile = /Users/gaelen/.gitignore
+[push]
+	default = matching
