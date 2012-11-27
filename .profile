@@ -13,7 +13,7 @@ export LANG="en_US"
 # Path updates
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/usr/local/share/python:/usr/local/share/python3
-export PATH=$PATH:/usr/local/Cellar/ruby/1.9.3-p194/bin
+export PATH=$PATH:/usr/local/Cellar/ruby/1.9.3-p327/bin
 
 # For node.js/npm
 export NODE_PATH=/usr/local/lib/node_modules
