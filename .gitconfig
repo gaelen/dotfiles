@@ -42,3 +42,5 @@
 	excludesfile = /Users/gaelen/.gitignore
 [push]
 	default = matching
+[credential]
+	helper = osxkeychain
