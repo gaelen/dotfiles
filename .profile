@@ -14,6 +14,7 @@ export LANG="en_US"
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/usr/local/share/python:/usr/local/share/python3
 export PATH=$PATH:/usr/local/opt/ruby/bin
+export PATH=$PATH:/usr/local/share/npm/bin
 
 
 # For node.js/npm
