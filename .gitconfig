@@ -3,7 +3,7 @@
 	br = branch
 	l  = log --pretty=oneline -n 20 --graph
 	st = status -sb
-	d = diff --patch-with-stat
+	d = diff --no-pager --patch-with-stat
 	undopush = push -f origin HEAD^:master
 
 [apply]

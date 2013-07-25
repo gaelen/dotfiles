@@ -12,7 +12,6 @@ export LANG="en_US"
 
 # Path updates
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=$PATH:/usr/local/share/python:/usr/local/share/python3
 export PATH=$PATH:/usr/local/opt/ruby/bin
 export PATH=$PATH:/usr/local/share/npm/bin
 
