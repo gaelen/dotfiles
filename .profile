@@ -11,7 +11,7 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 # Path updates
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=~/.bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/usr/local/opt/ruby/bin
 export PATH=$PATH:/usr/local/share/npm/bin
 
