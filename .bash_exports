@@ -12,3 +12,4 @@ export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="&:ls:cd:cd -:pwd;exit:date:* --help:exit"
 
+export JAVA_HOME="$(/usr/libexec/java_home)"
