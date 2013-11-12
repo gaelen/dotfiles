@@ -12,8 +12,8 @@ export LANG="en_US"
 
 # Path updates
 export PATH=~/.bin:/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=$PATH:/usr/local/opt/ruby/bin
-export PATH=$PATH:/usr/local/share/npm/bin
+export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=/usr/local/share/npm/bini:$PATH
 
 
 # For node.js/npm

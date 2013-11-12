@@ -40,7 +40,10 @@
 
 [core]
 	excludesfile = /Users/gaelen/.gitignore
+
 [push]
 	default = simple
+
 [credential]
 	helper = osxkeychain
+
