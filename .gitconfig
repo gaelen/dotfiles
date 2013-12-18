@@ -54,6 +54,7 @@
 [core]
 	excludesfile = /Users/gaelen/.gitignore
     whitespace = space-before-tab,indent-with-non-tab,trailing-space
+    trustctime = false
 
 [push]
 	default = simple
