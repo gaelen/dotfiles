@@ -1,63 +1,63 @@
 [alias]
-	co = checkout
-	br = branch
-	l  = log --pretty=oneline -n 20 --graph --abbrev-commit
-	st = status -sb
-	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
-	undopush = push -f origin HEAD^:master
+    co = checkout
+    br = branch
+    l  = log --pretty=oneline -n 20 --graph --abbrev-commit
+    st = status -sb
+    d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+    undopush = push -f origin HEAD^:master
     tags = tag -l
     branches = branch -a
     remotes = remote -v
 
     # Requires legit
     switch = !legit switch \"$@\"
-	branches = !legit branches
-	sprout = !legit sprout \"$@\"
-	unpublish = !legit unpublish \"$@\"
-	harvest = !legit harvest \"$@\"
-	sync = !legit sync \"$@\"
-	publish = !legit publish \"$@\"
-	graft = !legit graft \"$@\"
+    branches = !legit branches
+    sprout = !legit sprout \"$@\"
+    unpublish = !legit unpublish \"$@\"
+    harvest = !legit harvest \"$@\"
+    sync = !legit sync \"$@\"
+    publish = !legit publish \"$@\"
+    graft = !legit graft \"$@\"
 
 [apply]
-	whitespace = fix
+    whitespace = warn
 
 [color]
-	ui = auto
+    ui = auto
 
 [color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
+    current = yellow reverse
+    local = yellow
+    remote = green
 
 [color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
 
 [color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
+    added = yellow
+    changed = green
+    untracked = cyan
 
 [github]
-	user = gaelenh
+    user = gaelenh
 
 [merge]
-	log = true
+    log = true
 
 [user]
-	name = Gaelen Hadlett
-	email = gaelenh@gmail.com
+    name = Gaelen Hadlett
+    email = gaelenh@gmail.com
 
 [core]
-	excludesfile = /Users/gaelen/.gitignore
+    excludesfile = /Users/gaelen/.gitignore
     whitespace = space-before-tab,indent-with-non-tab,trailing-space
     trustctime = false
 
 [push]
-	default = simple
+    default = simple
 
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
