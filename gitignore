@@ -12,6 +12,11 @@ sftp-config.json
 *.o
 *.so
 
+# Build dirs #
+##############
+.sass-cache
+__pycache__
+
 # Packages #
 ############
 # it's better to unpack these files and commit the raw source
