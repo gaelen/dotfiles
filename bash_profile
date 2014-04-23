@@ -15,6 +15,9 @@ export PATH=~/.bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=~/node_modules/.bin:/usr/local/share/npm/bin:$PATH
 
+# For go get
+export GOPATH=~/workspace/gocode
+export PATH=$GOPATH/bin:$PATH
 
 #export PYTHONPATH=/usr/local/lib/python3.3/site-packages/:$PYTHONPATH
 
