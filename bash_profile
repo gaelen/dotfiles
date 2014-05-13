@@ -16,11 +16,16 @@ export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=~/node_modules/.bin:/usr/local/share/npm/bin:$PATH
 
 # For go get
+export GOROOT=`go env GOROOT`
 export GOPATH=~/workspace/gocode
 export GOBIN=$GOPATH/bin
-export PATH=$GOBIN:$PATH
+export PATH=$GOROOT/bin:$GOBIN:$PATH
 
 #export PYTHONPATH=/usr/local/lib/python3.3/site-packages/:$PYTHONPATH
+
+# For virtualenv wrapper
+export WORKON_HOME=~/workspace/virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
 
 # For node.js/npm
 export NODE_PATH=/usr/local/lib/node_modules
