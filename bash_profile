@@ -41,9 +41,8 @@ if [ -f `brew --prefix`/etc/autojump.sh ]; then
 fi
 
 # For more secure ssh keys
-eval $(ssh-agent)
+eval $(ssh-agent) >> /dev/null
 function cleanup {
-    echo "Killing SSH-Agent"
     kill -9 $SSH_AGENT_PID
 }
 trap cleanup EXIT
