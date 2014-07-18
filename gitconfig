@@ -41,6 +41,9 @@
     changed = green
     untracked = cyan
 
+[commit]
+    cleanup = scissors
+
 [github]
     user = gaelenh
 
