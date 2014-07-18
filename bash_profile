@@ -40,3 +40,10 @@ if [ -f `brew --prefix`/etc/autojump.sh ]; then
   . `brew --prefix`/etc/autojump.sh
 fi
 
+# For more secure ssh keys
+eval $(ssh-agent) >> /dev/null
+function cleanup {
+    kill -9 $SSH_AGENT_PID
+}
+trap cleanup EXIT
+
