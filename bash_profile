@@ -13,7 +13,7 @@ export LANG="en_US"
 # Path updates
 export PATH=~/.bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/usr/local/opt/ruby/bin:$PATH
-export PATH=~/node_modules/.bin:/usr/local/share/npm/bin:$PATH
+export PATH=/usr/local/share/npm/bin:$PATH
 
 # For go get
 export GOROOT=`go env GOROOT`
