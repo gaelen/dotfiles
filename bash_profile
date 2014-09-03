@@ -30,6 +30,10 @@ source /usr/local/bin/virtualenvwrapper.sh
 # For node.js/npm
 export NODE_PATH=/usr/local/lib/node_modules
 
+# Ruby
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # Completion scripts
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
