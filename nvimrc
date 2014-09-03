@@ -1,11 +1,7 @@
-" Make vim more useful
-set nocompatible
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
 set esckeys
-" Optimize for fast terminal connections
-set ttyfast
 " Add the g flag to search/replace by default
 set gdefault
 " Use UTF-8 without BOM
@@ -16,10 +12,10 @@ let mapleader=","
 set binary
 set noeol
 " Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
+set backupdir=~/.nvim/backups
+set directory=~/.nvim/swaps
 if exists("&undodir")
-	set undodir=~/.vim/undo
+	set undodir=~/.nvim/undo
 endif
 
 " Wrap for 120 characters
