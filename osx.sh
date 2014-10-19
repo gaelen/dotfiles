@@ -53,19 +53,10 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
-# Disable the iTunes arrow links completely
-defaults write com.apple.iTunes show-store-arrow-links -bool false
-
-# Disable the Ping sidebar in iTunes
-defaults write com.apple.iTunes disablePingSidebar -bool true
-
-# Disable all the other Ping stuff in iTunes
-defaults write com.apple.iTunes disablePing -bool true
-
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Use the Pro theme by default in Terminal.app
-defaults write com.apple.Terminal "Default Window Settings" -string "Tomorrow Night Eighties"
-defaults write com.apple.Terminal "Startup Window Settings" -string "Tomorrow Night Eighties"
+defaults write com.apple.Terminal "Default Window Settings" -string "Tomorrow"
+defaults write com.apple.Terminal "Startup Window Settings" -string "Tomorrow"
 
