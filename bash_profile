@@ -17,14 +17,14 @@ export PATH=/usr/local/share/npm/bin:$PATH
 
 # For go get
 export GOROOT=`go env GOROOT`
-export GOPATH=~/workspace/gocode
+export GOPATH=~/GitHub/gocode
 export GOBIN=$GOPATH/bin
 export PATH=$GOROOT/bin:$GOBIN:$PATH
 
 #export PYTHONPATH=/usr/local/lib/python3.3/site-packages/:$PYTHONPATH
 
 # For virtualenv wrapper
-export WORKON_HOME=~/workspace/virtualenvs
+export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
 # For node.js/npm
@@ -50,4 +50,3 @@ function cleanup {
     kill -9 $SSH_AGENT_PID
 }
 trap cleanup EXIT
-
