@@ -25,7 +25,6 @@ export PATH=$GOROOT/bin:$GOBIN:$PATH
 
 # For virtualenv wrapper
 export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
 
 # For node.js/npm
 export NODE_PATH=/usr/local/lib/node_modules
