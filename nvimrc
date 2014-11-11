@@ -33,7 +33,7 @@ set number
 " Enable syntax highlighting
 syntax on
 " Use color scheme
-colorscheme Tomorrow-Night-Eighties
+colorscheme Tomorrow
 " Highlight current line
 set cursorline
 " Use spaces, not tabs
