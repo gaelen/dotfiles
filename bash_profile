@@ -17,7 +17,7 @@ export PATH=/usr/local/share/npm/bin:$PATH
 
 # For go get
 export GOROOT=`go env GOROOT`
-export GOPATH=~/GitHub/gocode
+export GOPATH=~/github/gocode
 export GOBIN=$GOPATH/bin
 export PATH=$GOROOT/bin:$GOBIN:$PATH
 
