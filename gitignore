@@ -14,8 +14,8 @@ sftp-config.json
 
 # Build dirs #
 ##############
-.sass-cache
-__pycache__
+.sass-cache/
+__pycache__/
 
 # Packages #
 ############
