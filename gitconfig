@@ -10,7 +10,7 @@
 	remotes = remote -v
 
 [apply]
-	whitespace = warn
+	whitespace = fix
 
 [color]
 	ui = auto
@@ -69,3 +69,6 @@
 
 [rerere]
 	enabled = true
+
+[help]
+	autocorrect = 1
