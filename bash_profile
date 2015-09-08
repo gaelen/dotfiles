@@ -15,12 +15,6 @@ export PATH=~/.bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 
-# For go get
-export GOROOT=`go env GOROOT`
-export GOPATH=~/github/gocode
-export GOBIN=$GOPATH/bin
-export PATH=$GOROOT/bin:$GOBIN:$PATH
-
 #export PYTHONPATH=/usr/local/lib/python3.3/site-packages/:$PYTHONPATH
 
 # For virtualenv wrapper
