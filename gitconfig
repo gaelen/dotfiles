@@ -9,9 +9,6 @@
 	branches = branch -a
 	remotes = remote -v
 
-[apply]
-	whitespace = fix
-
 [color]
 	ui = auto
 
@@ -71,4 +68,4 @@
 	enabled = true
 
 [help]
-	autocorrect = 1
+	autocorrect = 0
