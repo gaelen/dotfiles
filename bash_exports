@@ -12,4 +12,5 @@ export HISTCONTROL=ignoreboth
 # Make some commands not show up in history
 export HISTIGNORE="&:ls:cd:cd -:pwd;exit:date:* --help:exit"
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
 export JAVA_HOME="$(/usr/libexec/java_home)"
