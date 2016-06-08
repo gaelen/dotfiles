@@ -2,6 +2,7 @@
 ########################
 scratch.*
 sftp-config.json
+.swp
 
 # Compiled source #
 ###################
