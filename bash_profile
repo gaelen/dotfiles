@@ -20,12 +20,9 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # For virtualenv wrapper
 export WORKON_HOME=~/.virtualenvs
 
-# For node.js/npm
-export NODE_PATH=/usr/local/lib/node_modules
-
 # Ruby
-export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # Completion scripts
 if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -38,8 +35,13 @@ if [ -f `brew --prefix`/etc/autojump.sh ]; then
 fi
 
 # For more secure ssh keys
-eval $(ssh-agent) >> /dev/null
-function cleanup {
-    kill -9 $SSH_AGENT_PID
-}
-trap cleanup EXIT
+#eval $(ssh-agent) >> /dev/null
+#function cleanup {
+#    kill -9 $SSH_AGENT_PID
+#}
+#trap cleanup EXIT
+export SSH_AUTH_SOCK=$(launchctl getenv SSH_AUTH_SOCK)
+
+# Disable Homebrew analytics
+export HOMEBREW_NO_ANALYTICS=1
+
