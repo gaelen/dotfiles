@@ -37,6 +37,7 @@
 
 [commit]
 	cleanup = scissors
+	verbose = true
 
 [github]
 	user = gaelenh
@@ -80,5 +81,9 @@
 
 [diff]
 	compactionHeuristic = true
+
 [diff-so-fancy]
 	stripLeadingSymbols = false
+
+[remote "origin"]
+	prune = true
