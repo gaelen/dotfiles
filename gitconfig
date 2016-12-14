@@ -40,7 +40,7 @@
 	verbose = true
 
 [github]
-	user = gaelenh
+	user = gaelen
 
 [merge]
 	log = true
