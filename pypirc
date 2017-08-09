@@ -1,0 +1,10 @@
+[distutils]
+index-servers =
+    pypi
+    test
+
+[pypi]
+username:gaelenh
+
+[test]
+username:gaelenh
