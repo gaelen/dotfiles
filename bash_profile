@@ -34,6 +34,11 @@ if [ -f `brew --prefix`/etc/autojump.sh ]; then
   . `brew --prefix`/etc/autojump.sh
 fi
 
+# Android / LineageOS
+if [ -d "$HOME/Developer/android-platform-tools" ] ; then
+    export PATH="$HOME/Developer/android-platform-tools:$PATH"
+fi
+
 # For more secure ssh keys
 #eval $(ssh-agent) >> /dev/null
 #function cleanup {
