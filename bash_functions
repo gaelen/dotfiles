@@ -1,5 +1,6 @@
 
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+        export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 	source /usr/local/bin/virtualenvwrapper.sh
 
 	# Automated changing of virtualenv when entering directories.
