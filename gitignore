@@ -47,3 +47,17 @@ __pycache__/
 Icon
 ehthumbs.db
 Thumbs.db
+
+# Elixir #
+# ########
+/_build
+/cover
+/deps
+/doc
+/.fetch
+erl_crash.dump
+*.ez
+*.beam
+.elixir_ls
+/config/*.secret.exs
+
