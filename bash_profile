@@ -19,33 +19,25 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # For virtualenv wrapper
 export WORKON_HOME=~/.virtualenvs
 
+# Append to the Bash history file, rather than overwriting it
+shopt -s histappend;
+
+# Don't autocomplete tab on empty line
+shopt -s no_empty_cmd_completion
+
 # Ruby
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # Completion scripts
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
+export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
+[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
 # Autojump
-if [ -f `brew --prefix`/etc/autojump.sh ]; then
-  . `brew --prefix`/etc/autojump.sh
-fi
-
-# Android / LineageOS
-if [ -d "$HOME/Developer/android-platform-tools" ] ; then
-    export PATH="$HOME/Developer/android-platform-tools:$PATH"
-fi
-
-# For more secure ssh keys
-#eval $(ssh-agent) >> /dev/null
-#function cleanup {
-#    kill -9 $SSH_AGENT_PID
-#}
-#trap cleanup EXIT
-export SSH_AUTH_SOCK=$(launchctl getenv SSH_AUTH_SOCK)
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # Disable Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
-
