@@ -12,12 +12,15 @@ export LANG="en_US"
 
 # Path updates
 export PATH=~/.bin:/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=/usr/local/share/npm/bin:$PATH
 
+# Python linking
+export LDFLAGS="-L/usr/local/opt/python@3.8/lib"
+
 # For virtualenv wrapper
-export WORKON_HOME=~/.virtualenvs
+export WORKON_HOME=~/.pyenv
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend;
@@ -26,7 +29,7 @@ shopt -s histappend;
 shopt -s no_empty_cmd_completion
 
 # Ruby
-source /usr/local/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # Completion scripts
