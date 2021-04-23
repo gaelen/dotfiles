@@ -1,26 +1,36 @@
-*.c     diff=cpp
-*.h     diff=cpp
-*.c++   diff=cpp
-*.h++   diff=cpp
-*.cpp   diff=cpp
-*.hpp   diff=cpp
-*.cc    diff=cpp
-*.hh    diff=cpp
-*.m     diff=objc
-*.mm    diff=objc
-*.cs    diff=csharp
-*.css   diff=css
-*.html  diff=html
-*.xhtml diff=html
-*.ex    diff=elixir
-*.exs   diff=elixir
-*.go    diff=golang
-*.php   diff=php
-*.pl    diff=perl
-*.py    diff=python
-*.md    diff=markdown
-*.rb    diff=ruby
-*.rake  diff=ruby
-*.rs    diff=rust
-*.lisp  diff=lisp
-*.el    diff=lisp
+* text=auto
+
+*.c     text diff=cpp
+*.h     text diff=cpp
+*.c++   text diff=cpp
+*.h++   text diff=cpp
+*.cpp   text diff=cpp
+*.hpp   text diff=cpp
+*.cc    text diff=cpp
+*.hh    text diff=cpp
+*.m     text diff=objc
+*.mm    text diff=objc
+*.cs    text diff=csharp
+*.css   text diff=css
+*.html  text diff=html
+*.xhtml text diff=html
+*.ex    text diff=elixir
+*.exs   text diff=elixir
+*.go    text diff=golang
+*.php   text diff=php
+*.pl    text diff=perl
+*.py    text diff=python
+*.md    text diff=markdown
+*.rb    text diff=ruby
+*.rake  text diff=ruby
+*.rs    text diff=rust
+*.lisp  text diff=lisp
+*.el    text diff=lisp
+
+*.sqlite3   binary
+*.ico       binary
+*.jpg       binary
+*.jpeg      binary
+*.jpx       binary
+*.png       binary
+*.svg       text
