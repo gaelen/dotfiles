@@ -1,7 +1,15 @@
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'elixir-lang/vim-elixir'
+Plug 'thinca/vim-ref'
+Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
+call plug#end()
+" Use `PlugInstall` to install
+
 " Enhance command-line completion
 set wildmenu
 " Allow cursor keys in insert mode
-set esckeys
+"set esckeys
 " Add the g flag to search/replace by default
 set gdefault
 " Use UTF-8 without BOM
@@ -12,12 +20,14 @@ let mapleader=","
 set binary
 set noeol
 " Centralize backups, swapfiles and undo history
-set backupdir=~/.nvim/backups
-set directory=~/.nvim/swaps
+set backupdir=~/.config/nvim/backups
+set directory=~/.config/nvim/swaps
 if exists("&undodir")
-	set undodir=~/.nvim/undo
+	set undodir=~/.config/nvim/undo
 endif
 
+" Add in MS copy/paste/cut
+behave mswin
 " Wrap for 120 characters
 set tw=119
 " Auto indent
@@ -31,11 +41,11 @@ set history=100
 " Enable line numbers
 set number
 " Enable syntax highlighting
-syntax on
+syntax enable
 " Use color scheme
-colorscheme Tomorrow
+"colorscheme Tomorrow
 " Highlight current line
-set cursorline
+"set cursorline
 " Use spaces, not tabs
 set expandtab
 " Make tabs as wide as four spaces
