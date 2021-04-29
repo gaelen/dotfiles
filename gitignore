@@ -1,5 +1,7 @@
 # Personal preferences #
 ########################
+notes.txt
+notes*.key
 scratch.*
 sftp-config.json
 .swp
