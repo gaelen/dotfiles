@@ -6,6 +6,10 @@ scratch.*
 sftp-config.json
 .swp
 
+# VS Code #
+###########
+.vscode
+
 # Compiled source #
 ###################
 *.com
