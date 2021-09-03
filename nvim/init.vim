@@ -1,7 +1,11 @@
 call plug#begin('~/.nvim/plugged')
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/playground'
+Plug 'neovim/nvim-lspconfig'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 Plug 'elixir-editors/vim-elixir'
 Plug 'thinca/vim-ref'
+Plug 'folke/twilight.nvim'
 call plug#end()
 " Use `PlugInstall` to install
 
